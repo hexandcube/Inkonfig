@@ -1,0 +1,101 @@
+@import 'styles/variables';
+@import 'styles/helpers';
+@import 'bulma/bulma.sass';
+@import 'sweetalert2/src/sweetalert2.scss';
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono&display=swap');
+
+:root {
+    background-color: $background;
+    color: $text;
+}
+
+.title, span, p, .label {
+    color: $text;
+}
+
+.anchor::before {
+    content: '';
+    display: block;
+    height: 180px;
+    margin-top: -180px;
+}
+
+.input,
+select,
+select option,
+textarea {
+    background-color: $black-ter !important;
+    color: $white !important;
+    border-color: $grey-dark !important;
+}
+
+.display-block, textarea {
+    display: block;
+}
+
+.checkbox {
+    margin-right: 4px;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+    color: $grey;
+}
+
+.is-muted {
+    color: $grey;
+}
+
+.is-inverted {
+    background-color: $background !important;
+}
+
+.is-inverted:hover {
+    background-color: $black-ter !important;
+}
+
+.menu-item a{
+    border: solid 3px transparent;
+    border-radius: $corners;
+}
+
+.menu-item a:hover {
+    border: 3px solid $cyan;
+    color: $cyan;
+}
+
+.footer {
+    background-color: $cyan !important;
+}
+
+.link {
+    color: $cyan;
+    background-color: white;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 1px solid transparent;
+}
+
+.link:hover {
+    color: white;
+    background-color: $cyan;
+    border: 1px solid white;
+}
+
+#inkonfig-sidebar {
+    position: sticky;
+    top: 0;
+}
+
+.navbar-menu .navbar-item {
+    font-size: 14px;
+    transition: background-color .26s, color .26s;
+}
+
+#inkonfig-sidebar .active {
+    background-color: $cyan;
+}
+
+#inkonfig-sidebar .active:hover {
+    color: white;
+}
