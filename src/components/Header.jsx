@@ -1,5 +1,4 @@
 import React from 'react'
-import Swal from "sweetalert2/dist/sweetalert2.js";
 const packageJson = require('../../package.json');
 
 export default function header() {
@@ -16,11 +15,10 @@ export default function header() {
               Version {packageJson.version} | Supported: Windows 10, Windows 11 (Beta)
             </p>
             <div className="mt-5">
-              {/* TODO: Add docs link here */}
-              <a href="#noDocsYet" className="button is-link is-light mr-2" onClick={displayDocsAlert}>
+              <a href="https://docs.inkonfig.tk" className="button is-link is-light mr-2">
                 Documentation
               </a>
-              <a href="#noDocsYet" className="button is-warning is-light ml-2" onClick={displayDocsAlert}>
+              <a href="https://docs.inkonfig.tk" className="button is-warning is-light ml-2">
                 Learn more
               </a>
             </div>
@@ -29,12 +27,4 @@ export default function header() {
       </section>
     </header>
   );
-}
-
-function displayDocsAlert() {
-  Swal.fire({
-    icon: 'info',
-    title: 'The docs are not yet ready!',
-    text: 'Come back in a few days and try again 😉'
-  })
 }
