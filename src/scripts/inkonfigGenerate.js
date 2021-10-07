@@ -186,8 +186,13 @@ echo [Inkonfig] Configuring your settings, please wait...`;
     scriptContent += `\nREG add "HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows NT\\Reliability" /v "ShutdownReasonUI" /t REG_DWORD /d "0" /f`;
   }
 
-  scriptContent += "\necho.\necho [Inkonfig] Configuration completed, press any key to exit.\npause " +
-      ">nul";
+  if (formData.restartComputer) {
+    scriptContent += "\necho.\necho [Inkonfig] Configuration completed, press any key to restart.\npause >nul";
+    scriptContent += `\nshutdown /r /t 5 /d P:2:4 /c "[Inkonfig] Restarting after configuring Windows"`
+  } else {
+    scriptContent += "\necho.\necho [Inkonfig] Configuration completed, press any key to exit.\npause >nul";
+    scriptContent += "exit";
+  }
 
   var scriptFileName;
 

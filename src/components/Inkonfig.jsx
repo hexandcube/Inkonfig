@@ -205,6 +205,12 @@ export default function Inkonfig() {
               falseValue="cmd"
               noDefault/>
           </div>
+
+          <Checkbox
+            name="restartComputer"
+            label="Restart the computer after applying the configuration (Recommended)"
+          />
+
         </div>
       </div>
     </form>
