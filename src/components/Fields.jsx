@@ -58,6 +58,14 @@ function Dropdown(props) {
               : "false"}>{props.falseText
                 ? props.falseText
                 : "Disabled"}{props.systemDefault === "false" && " (default)"}</option>
+            {props.option3Text && 
+              <option
+                value={props.option3Value}>{props.option3Text}{props.systemDefault === "option3" && " (default)"}</option>
+            }
+            {props.option4Text &&
+              <option
+                value={props.option4Value}>{props.option4Text}{props.systemDefault === "option4" && " (default)"}</option>
+            }
           </select>
         </div>
       </fieldset>
