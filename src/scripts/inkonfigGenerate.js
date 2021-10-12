@@ -113,7 +113,7 @@ echo [Inkonfig] Configuring your settings, please wait...`;
 
   if (formData.shellPicturesLocation) {
     scriptContent += `\nREG add "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders" /v "{0DDD015D-B06C-45D5-8C4C-F59713854639}" /t REG_EXPAND_SZ /d "${formData.shellPicturesLocation}" /f`;
-    scriptContent += `\nREG add "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders" /v "My Pictures /t REG_EXPAND_SZ /d "${formData.shellPicturesLocation}" /f`;
+    scriptContent += `\nREG add "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders" /v "My Pictures" /t REG_EXPAND_SZ /d "${formData.shellPicturesLocation}" /f`;
   }
 
   if (formData.shellVideosLocation) {
