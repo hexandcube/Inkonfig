@@ -75,7 +75,13 @@ export default function Inkonfig() {
                 systemDefault="true"/>
 
             </div>
-            <fieldset>
+            <Dropdown
+              label="Show Windows version on desktop:"
+              name="showWindowsVersionOnDesktop"
+              systemDefault="false" 
+              isNotColumn/>
+              
+            <fieldset className="mt-5">
               <Subtitle>Shell Folders</Subtitle>
               <div className="columns" id="shellFolders">
                 <TextField

@@ -106,6 +106,12 @@ echo [Inkonfig] Configuring your settings, please wait...`;
     scriptContent += `\nREG add "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced" /v "LaunchTo" /t REG_DWORD /d "2" /f`;
   }
 
+  if (formData.showWindowsVersionOnDesktop === "true") {
+    scriptContent += `\nREG add "HKCU\\Control Panel\\Desktop" /V PaintDesktopVersion /T REG_DWORD /D 1 /F`
+  } else if (formData.showWindowsVersionOnDesktop === "false") {
+    scriptContent += `\nREG DELETE "HKCU\\Control Panel\\Desktop" /V PaintDesktopVersion /F`
+  }
+
   if (formData.shellDocumentsLocation) {
     scriptContent += `\nREG add "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders" /v "{F42EE2D3-909F-4907-8871-4C22FC0BF756}" /t REG_EXPAND_SZ /d "${formData.shellDocumentsLocation}" /f`;
     scriptContent += `\nREG add "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\User Shell Folders" /v "Personal" /t REG_EXPAND_SZ /d "${formData.shellDocumentsLocation}" /f`;
