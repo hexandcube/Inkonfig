@@ -15,6 +15,9 @@ function Sidebar() {
                             <li className="menu-item">
                                 <a href="#shellFolders">Shell folders</a>
                             </li>
+                            <li className="menu-item">
+                                <a href="#contextMenu">Context Menu</a>
+                            </li>
                         </ul>
                     </li>
                     <li className="menu-item">

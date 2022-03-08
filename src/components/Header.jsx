@@ -12,7 +12,7 @@ export default function header() {
               A quick way to configure your Windows device
             </p>
             <p className="is-family-monospace">
-              Version {packageJson.version} | Supported: Windows 10, Windows 11 (Beta)
+              Version {packageJson.version} | Supported: Windows 11, Windows 10
             </p>
             <div className="mt-5">
               <a href="https://inkonfigdocs.hexandcube.eu.org" className="button is-link is-light mr-2">

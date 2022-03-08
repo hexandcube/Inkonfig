@@ -128,6 +128,16 @@ export default function Inkonfig() {
                   optional/>
               </div>
             </fieldset>
+            <fieldset className='mt-5'>
+              <Subtitle>Context Menu</Subtitle>
+              <div id="contextMenu">
+                <Dropdown
+                  label="Classic context menus (Windows 11):"
+                  name="enableClassicContextMenus"
+                  systemDefault="false" 
+                  isNotColumn/>
+              </div>
+            </fieldset>
           </div>
           <Title>Software</Title>
           <div id="software">
