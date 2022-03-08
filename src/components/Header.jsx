@@ -15,12 +15,12 @@ export default function header() {
               Version {packageJson.version} | Supported: Windows 10, Windows 11 (Beta)
             </p>
             <div className="mt-5">
-              <a href="https://docs.inkonfig.tk" className="button is-link is-light mr-2">
+              <a href="https://inkonfigdocs.hexandcube.eu.org" className="button is-link is-light mr-2">
                 Documentation
               </a>
-              <a href="https://docs.inkonfig.tk" className="button is-warning is-light ml-2">
+              {/* <a href="https://inkonfigdocs.hexandcube.eu.org" className="button is-warning is-light ml-2">
                 Learn more
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
