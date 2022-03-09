@@ -1189,6 +1189,11 @@
     slash "^3.0.0"
     source-map "^0.6.1"
     write-file-atomic "^3.0.0"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 
 "@jest/types@^26.6.2":
   version "26.6.2"
@@ -1199,6 +1204,10 @@
     "@types/node" "*"
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
+<<<<<<< HEAD
+=======
+>>>>>>> dev
+>>>>>>> dev
 
 "@jest/types@^27.5.1":
   version "27.5.1"
@@ -1404,18 +1413,41 @@
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
 
+<<<<<<< HEAD
+"@testing-library/dom@^8.0.0":
+  version "8.11.3"
+  resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-8.11.3.tgz#38fd63cbfe14557021e88982d931e33fb7c1a808"
+=======
 "@testing-library/dom@^7.28.1":
   version "7.31.2"
   resolved "https://registry.npmjs.org/@testing-library/dom/-/dom-7.31.2.tgz"
+<<<<<<< HEAD
+=======
+>>>>>>> dev
+>>>>>>> dev
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/runtime" "^7.12.5"
     "@types/aria-query" "^4.2.0"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    aria-query "^5.0.0"
+    chalk "^4.1.0"
+    dom-accessibility-api "^0.5.9"
+    lz-string "^1.4.4"
+    pretty-format "^27.0.2"
+=======
+>>>>>>> dev
     aria-query "^4.2.2"
     chalk "^4.1.0"
     dom-accessibility-api "^0.5.6"
     lz-string "^1.4.4"
     pretty-format "^26.6.2"
+<<<<<<< HEAD
+=======
+>>>>>>> dev
+>>>>>>> dev
 
 "@testing-library/jest-dom@^5.11.4":
   version "5.16.2"
@@ -1431,16 +1463,35 @@
     lodash "^4.17.15"
     redent "^3.0.0"
 
+<<<<<<< HEAD
+"@testing-library/react@^12.1.3":
+  version "12.1.3"
+  resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-12.1.3.tgz#ef26c5f122661ea9b6f672b23dc6b328cadbbf26"
+=======
 "@testing-library/react@^11.1.0":
   version "11.2.7"
   resolved "https://registry.npmjs.org/@testing-library/react/-/react-11.2.7.tgz"
+<<<<<<< HEAD
+=======
+>>>>>>> dev
+>>>>>>> dev
   dependencies:
     "@babel/runtime" "^7.12.5"
-    "@testing-library/dom" "^7.28.1"
+    "@testing-library/dom" "^8.0.0"
+    "@types/react-dom" "*"
 
+<<<<<<< HEAD
 "@testing-library/user-event@^12.1.10":
   version "12.8.3"
   resolved "https://registry.npmjs.org/@testing-library/user-event/-/user-event-12.8.3.tgz"
+<<<<<<< HEAD
+=======
+=======
+"@testing-library/user-event@^13.5.0":
+  version "13.5.0"
+  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-13.5.0.tgz#69d77007f1e124d55314a2b73fd204b333b13295"
+>>>>>>> dev
+>>>>>>> dev
   dependencies:
     "@babel/runtime" "^7.12.5"
 
@@ -1612,6 +1663,16 @@
 "@types/prettier@^2.1.5":
   version "2.4.4"
   resolved "https://registry.npmjs.org/@types/prettier/-/prettier-2.4.4.tgz"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+"@types/prop-types@*":
+  version "15.7.4"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
+=======
+>>>>>>> dev
+>>>>>>> dev
 
 "@types/q@^1.5.1":
   version "1.5.5"
@@ -1624,6 +1685,26 @@
 "@types/range-parser@*":
   version "1.2.4"
   resolved "https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.4.tgz"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+"@types/react-dom@*":
+  version "17.0.13"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.13.tgz#a3323b974ee4280070982b3112351bb1952a7809"
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*":
+  version "17.0.39"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.39.tgz#d0f4cde092502a6db00a1cded6e6bf2abb7633ce"
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+=======
+>>>>>>> dev
+>>>>>>> dev
 
 "@types/resolve@1.17.1":
   version "1.17.1"
@@ -1634,6 +1715,16 @@
 "@types/retry@^0.12.0":
   version "0.12.1"
   resolved "https://registry.npmjs.org/@types/retry/-/retry-0.12.1.tgz"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+"@types/scheduler@*":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
+=======
+>>>>>>> dev
+>>>>>>> dev
 
 "@types/serve-index@^1.9.1":
   version "1.9.1"
@@ -1677,12 +1768,18 @@
 "@types/yargs-parser@*":
   version "21.0.0"
   resolved "https://registry.npmjs.org/@types/yargs-parser/-/yargs-parser-21.0.0.tgz"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> dev
 
 "@types/yargs@^15.0.0":
   version "15.0.14"
   resolved "https://registry.npmjs.org/@types/yargs/-/yargs-15.0.14.tgz"
   dependencies:
     "@types/yargs-parser" "*"
+>>>>>>> dev
 
 "@types/yargs@^16.0.0":
   version "16.0.4"
@@ -1996,7 +2093,15 @@ ansi-html-community@^0.0.8:
   version "0.0.8"
   resolved "https://registry.npmjs.org/ansi-html-community/-/ansi-html-community-0.0.8.tgz"
 
+<<<<<<< HEAD
 ansi-regex@^5.0.0, ansi-regex@^5.0.1:
+=======
+<<<<<<< HEAD
+ansi-regex@^5.0.1:
+=======
+ansi-regex@^5.0.0, ansi-regex@^5.0.1:
+>>>>>>> dev
+>>>>>>> dev
   version "5.0.1"
   resolved "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz"
 
@@ -2869,10 +2974,28 @@ cssstyle@^2.3.0:
   dependencies:
     cssom "~0.3.6"
 
+<<<<<<< HEAD
 damerau-levenshtein@^1.0.7:
   version "1.0.8"
   resolved "https://registry.npmjs.org/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz"
 
+=======
+<<<<<<< HEAD
+csstype@^3.0.2:
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.11.tgz#d66700c5eacfac1940deb4e3ee5642792d85cd33"
+
+damerau-levenshtein@^1.0.7:
+  version "1.0.8"
+  resolved "https://registry.npmjs.org/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz"
+
+=======
+damerau-levenshtein@^1.0.7:
+  version "1.0.8"
+  resolved "https://registry.npmjs.org/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz"
+
+>>>>>>> dev
+>>>>>>> dev
 data-urls@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/data-urls/-/data-urls-2.0.0.tgz"
@@ -3045,7 +3168,15 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
+<<<<<<< HEAD
 dom-accessibility-api@^0.5.6:
+=======
+<<<<<<< HEAD
+dom-accessibility-api@^0.5.6, dom-accessibility-api@^0.5.9:
+=======
+dom-accessibility-api@^0.5.6:
+>>>>>>> dev
+>>>>>>> dev
   version "0.5.13"
   resolved "https://registry.npmjs.org/dom-accessibility-api/-/dom-accessibility-api-0.5.13.tgz"
 
