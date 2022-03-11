@@ -17,6 +17,8 @@ export default function Footer() {
             <a href="https://hexandcube.tk" className="link">
               Hexandcube
             </a>
+            <br></br>
+            Powered by <a className="link" href="https://netlify.com/?ref=inkonfig">Netlify</a>
           </p>
         </div>
       </div>
