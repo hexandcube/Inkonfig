@@ -13,7 +13,7 @@
     "bulma": "^0.9.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "^5.0.0",
+    "react-scripts": "^5.0.1",
     "sass": "^1.50.0",
     "sweetalert2": "^11.4.7",
     "vanillajs-scrollspy": "^2.2.0",
