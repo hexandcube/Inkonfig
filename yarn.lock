@@ -7172,9 +7172,9 @@ v8-to-istanbul@^8.1.0:
     convert-source-map "^1.6.0"
     source-map "^0.7.3"
 
-vanillajs-scrollspy@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/vanillajs-scrollspy/-/vanillajs-scrollspy-2.2.0.tgz#45f04d7f1c5f31754beefc2e9c6af269911da302"
+vanillajs-scrollspy@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/vanillajs-scrollspy/-/vanillajs-scrollspy-3.0.3.tgz#8f13d9c7e8f5287f84c050b81e05a50f48b50161"
 
 vary@~1.1.2:
   version "1.1.2"
