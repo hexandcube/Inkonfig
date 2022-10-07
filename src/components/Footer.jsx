@@ -14,7 +14,7 @@ export default function Footer() {
           />
           <p className="ml-2 mt-1">
             Version {packageJson.version} by&nbsp;
-            <a href="https://hexandcube.tk" className="link">
+            <a href="https://hexandcube.eu.org" className="link">
               Hexandcube
             </a>
             <br></br>
