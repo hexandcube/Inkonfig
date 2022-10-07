@@ -16,7 +16,7 @@
     "react-scripts": "^5.0.1",
     "sass": "^1.55.0",
     "sweetalert2": "^11.4.7",
-    "vanillajs-scrollspy": "^2.2.0",
+    "vanillajs-scrollspy": "^3.0.3",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
