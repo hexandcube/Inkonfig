@@ -21,10 +21,25 @@ function Sidebar() {
                         </ul>
                     </li>
                     <li className="menu-item">
+                        <a href="#powerPlan">Power Plan</a>
+                        <ul>
+                            <li className="menu-item">
+                                <a href="#onAcPower">On AC Power</a>
+                            </li>
+                            <li className="menu-item">
+                                <a href="#onBatteryPower">On Battery Power</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li className="menu-item">
                         <a href="#software" className="menu-item-header">
                             Software
                         </a>
                         <ul>
+                            <li className="menu-item">
+                                <a href="#installSoftware">Install Software</a>
+                            </li>
                             <li className="menu-item">
                                 <a href="#bloatwareAndAds">Bloatware and Ads</a>
                             </li>
