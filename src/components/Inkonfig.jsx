@@ -4,8 +4,8 @@ import generateScript from '../scripts/inkonfigGenerate';
 import { TextField, Dropdown, Checkbox, Textbox } from '../components/Fields';
 import { Title, Subtitle } from '../components/Titles';
 import { toggleChocolateyInput, preventSpaces } from '../scripts/inkonfigHelpers';
-import VanillaScrollspy from 'vanillajs-scrollspy';
 import Swal from "sweetalert2/dist/sweetalert2.js";
+// import VanillaScrollspy from 'vanillajs-scrollspy';
 
 export default function Inkonfig() {
 
@@ -354,11 +354,10 @@ export default function Inkonfig() {
   );
 }
 
-
-window.onload = function () {
-  var sidebar = document.querySelector("#inkonfig-sidebar");
-  const scrollspy = VanillaScrollspy(sidebar, 1000, 'easeInOutQuint');
-  scrollspy.init();
+window.onload = function() {
+  // var sidebar = document.querySelector("#inkonfig-sidebar");
+  // const scrollspy = VanillaScrollspy(sidebar, 1000, 'easeInOutQuint');
+  // scrollspy.init();
 
   var mobileDevice = (/iphone|ipad|ipod|android|blackberry|mini|palm/i.test(navigator.userAgent.toLowerCase()));
   if (mobileDevice && !sessionStorage.getItem('mobileWarningAck')) {
