@@ -81,6 +81,12 @@ echo [Inkonfig] Configuring your settings, please wait...`;
     scriptContent += `\nREG add "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced" /v HideFileExt /t REG_DWORD /d 1 /f`;
   }
 
+  if (formData.launchExplorerTo === "thispc") {
+    scriptContent += `\nREG add "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced" /v "LaunchTo" /t REG_DWORD /d "1" /f`;
+  } else if (formData.launchExplorerTo === "quickaccess") {
+    scriptContent += `\nREG add "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced" /v "LaunchTo" /t REG_DWORD /d "2" /f`;
+  }
+
   if (formData.showSecondsInTaskbarClock === "true") {
     scriptContent += `\nREG add "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced" /v "ShowSecondsInSystemClock" /t REG_DWORD /d "1" /f`;
   } else if (formData.showSecondsInTaskbarClock === "false") {
@@ -97,12 +103,6 @@ echo [Inkonfig] Configuring your settings, please wait...`;
     scriptContent += `\nREG add "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System" /v "VerboseStatus" /t REG_DWORD /d "1" /f`;
   } else if (formData.enableVerboseLogon === "false") {
     scriptContent += `\nREG add "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\System" /v "VerboseStatus" /t REG_DWORD /d "0" /f`;
-  }
-
-  if (formData.launchExplorerTo === "thispc") {
-    scriptContent += `\nREG add "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced" /v "LaunchTo" /t REG_DWORD /d "1" /f`;
-  } else if (formData.launchExplorerTo === "quickaccess") {
-    scriptContent += `\nREG add "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced" /v "LaunchTo" /t REG_DWORD /d "2" /f`;
   }
 
   if (formData.showWindowsVersionOnDesktop === "true") {

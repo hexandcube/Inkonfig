@@ -42,6 +42,15 @@ export default function Inkonfig() {
                 trueText="Shown"
                 falseText="Hidden"
                 systemDefault="false" />
+              
+              <Dropdown
+                label="Open Explorer to:"
+                name="launchExplorerTo"
+                trueText="Quick Access"
+                trueValue="quickaccess"
+                falseText="This PC"
+                falseValue="thispc"
+                systemDefault="true" />
 
               <Dropdown
                 label="Seconds in the taskbar clock:"
@@ -62,15 +71,6 @@ export default function Inkonfig() {
                 label="Verbose logon messages:"
                 name="enableVerboseLogon"
                 systemDefault="false" />
-
-              <Dropdown
-                label="Open Explorer to:"
-                name="launchExplorerTo"
-                trueText="Quick Access"
-                trueValue="quickaccess"
-                falseText="This PC"
-                falseValue="thispc"
-                systemDefault="true" />
 
             </div>
             <Dropdown
@@ -265,7 +265,7 @@ export default function Inkonfig() {
             <Subtitle id="installSoftware">Install Software</Subtitle>
             <Checkbox
               label="Install software using Chocolatey"
-              name="installSoftware"
+              name="installSoftwareChoco"
               onClick={toggleChocolateyInput} />
 
             <div id="chocolateyInput" className="is-hidden">
