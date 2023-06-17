@@ -1,6 +1,6 @@
 function toggleChocolateyInput() {
   const chocolateyInput = document.querySelector("#chocolateyInput");
-  const installSoftwareCheckbox = document.querySelector("#installSoftware");
+  const installSoftwareCheckbox = document.querySelector("#installSoftwareChoco");
   if (installSoftwareCheckbox.checked) {
     chocolateyInput.classList.remove("is-hidden");
   } else {

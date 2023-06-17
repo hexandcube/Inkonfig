@@ -9,6 +9,22 @@
     color: $text;
 }
 
+.title {
+    text-decoration: underline;
+    text-decoration-color: $cyan;
+    text-decoration-thickness: 5px;
+}
+
+h3 {
+    text-decoration: none !important;
+}
+
+.module {
+    background-color: #2d2c40;
+    border-radius: $corners;
+    padding: 20px;
+}
+
 .title, span, p, .label {
     color: $text;
 }
