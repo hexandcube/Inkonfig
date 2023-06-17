@@ -66,6 +66,10 @@ function Dropdown(props) {
               <option
                 value={props.option4Value}>{props.option4Text}{props.systemDefault === "option4" && " (default)"}</option>
             }
+            {props.option5Text &&
+              <option
+                value={props.option5Value}>{props.option5Text}{props.systemDefault === "option5" && " (default)"}</option>
+            }
           </select>
         </div>
       </fieldset>

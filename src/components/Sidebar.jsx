@@ -21,6 +21,18 @@ function Sidebar() {
                         </ul>
                     </li>
                     <li className="menu-item">
+                        <a href="#powerplan">Power Plan</a>
+                        <ul>
+                            <li className="menu-item">
+                                <a href="#onacpower">On AC Power</a>
+                            </li>
+                            <li className="menu-item">
+                                <a href="#onbatterypower">On Battery Power</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li className="menu-item">
                         <a href="#software" className="menu-item-header">
                             Software
                         </a>

@@ -68,6 +68,8 @@ exit
 echo.
 title Inkonfig Configuration Script (v.${packageJson.version}) [Running...]
 echo [Inkonfig] Configuring your settings, please wait...`;
+
+  // Personalization
   
   if (formData.pcName !== "") {
     scriptContent += `\nWMIC computersystem where caption="%computername%" rename "${formData.pcName}"`;
@@ -77,12 +79,6 @@ echo [Inkonfig] Configuring your settings, please wait...`;
     scriptContent += `\nREG add "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced" /v HideFileExt /t REG_DWORD /d 0 /f`;
   } else if (formData.showFileExt === "false") {
     scriptContent += `\nREG add "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\Advanced" /v HideFileExt /t REG_DWORD /d 1 /f`;
-  }
-
-  if (formData.enableHibernation === "true") {
-    scriptContent += `\npowercfg -H ON`;
-  } else if (formData.enableHibernation === "false") {
-    scriptContent += `\npowercfg -H OFF`;
   }
 
   if (formData.showSecondsInTaskbarClock === "true") {
@@ -149,6 +145,48 @@ echo [Inkonfig] Configuring your settings, please wait...`;
     scriptContent += `\nREG delete "HKCU\\Software\\Classes\\CLSID\\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}" /f"`;
   }
 
+  // Power Plan
+
+  if (formData.powerPlan === "balanced") {
+    scriptContent += `\npowercfg -setactive 381b4222-f694-41f0-9685-ff5bb260df2e`;
+  } else if (formData.powerPlan === "highperformance") {
+    scriptContent += `\npowercfg -setactive 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c`;
+  } else if (formData.powerPlan === "powersaver") {
+    scriptContent += `\npowercfg -setactive a1841308-3541-4fab-bc81-f71556f20b4a`;
+  }
+
+  if (formData.enableHibernation === "true") {
+    scriptContent += `\npowercfg -H ON`;
+  } else if (formData.enableHibernation === "false") {
+    scriptContent += `\npowercfg -H OFF`;
+  }
+
+  if (formData.acLidCloseAction !== "default") {
+    scriptContent += `\npowercfg -setacvalueindex SCHEME_CURRENT 4f971e89-eebd-4455-a8de-9e59040e7347 5ca83367-6e45-459f-a27b-476b1d01c936 ${formData.acLidCloseAction}`;
+  }
+
+  if (formData.battLidCloseAction !== "default") {
+    scriptContent += `\npowercfg -setdcvalueindex SCHEME_CURRENT 4f971e89-eebd-4455-a8de-9e59040e7347 5ca83367-6e45-459f-a27b-476b1d01c936 ${formData.battLidCloseAction}`;
+  }
+
+  if (formData.acPowerButtonAction !== "default") {
+    scriptContent += `\npowercfg -setacvalueindex SCHEME_CURRENT 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 ${formData.acPowerButtonAction}`;
+  }
+
+  if (formData.battPowerButtonAction !== "default") {
+    scriptContent += `\npowercfg -setdcvalueindex SCHEME_CURRENT 4f971e89-eebd-4455-a8de-9e59040e7347 7648efa3-dd9c-4e3e-b566-50f929386280 ${formData.battPowerButtonAction}`;
+  }
+
+  if (formData.acSleepButtonAction !== "default") {
+    scriptContent += `\npowercfg -setacvalueindex SCHEME_CURRENT 4f971e89-eebd-4455-a8de-9e59040e7347 96996bc0-ad50-47ec-923b-6f41874dd9eb ${formData.acSleepButtonAction}`;
+  }
+
+  if (formData.battSleepButtonAction !== "default") {
+    scriptContent += `\npowercfg -setdcvalueindex SCHEME_CURRENT 4f971e89-eebd-4455-a8de-9e59040e7347 96996bc0-ad50-47ec-923b-6f41874dd9eb ${formData.battSleepButtonAction}`;
+  }
+    
+  // Software
+
   if (formData.installSoftware) {
     if (!formData.dontInstallChocolatey) {
       scriptContent += `\n@"%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin"`;
@@ -184,6 +222,8 @@ echo [Inkonfig] Configuring your settings, please wait...`;
     }
 
   }
+
+  // Advanced Configuration
 
   if (formData.tempPath) {
     scriptContent += `\nIF NOT EXIST "${formData.tempPath}" ( mkdir ${formData.tempPath} )`;
